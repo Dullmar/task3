@@ -1,0 +1,11 @@
+2.	class EuclideanAlgorithm:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def compute_gcd(self):
+        while self.b != 0:
+            temp = self.b
+            self.b = self.a % self.b
+            self.a = temp
+        return self.a
